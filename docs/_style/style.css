@@ -1,0 +1,144 @@
+section, div#interface {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: white;
+  font: normal 1.3em Arial, sans-serif;
+}
+
+p {
+  text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+div#interface {
+  margin: auto;
+  width: 80%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+header nav#menu ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #10821f;
+  list-style: none;
+}
+header nav#menu ul > li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 4px solid #50b34d;
+  transition: 0.2s;
+}
+header nav#menu ul > li:hover, header nav#menu li:active {
+  cursor: pointer;
+  transition: 0.2s;
+  border-bottom-color: black;
+}
+header nav#menu ul a {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14pt;
+  color: white;
+}
+
+section {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin-top: -16px;
+  padding: 20px;
+  background-color: #84e67b;
+}
+section img#img_perfil {
+  float: left;
+  margin-right: 10px;
+  border: 5px solid black;
+  border-radius: 150px;
+}
+
+.project {
+  text-align: center;
+}
+.project .figures {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.project figure.image_with_caption {
+  position: relative;
+  margin: 5px;
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.project figure.image_with_caption img {
+  width: 100%;
+  height: 100%;
+}
+.project figcaption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 16pt;
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  box-sizing: border-box;
+  opacity: 0;
+}
+.project figure.image_with_caption:hover figcaption, .project figure.image_with_caption:active figcaption {
+  opacity: 1;
+  transition: 0.5s;
+}
+.project figure.image_with_caption:hover > img, .project figure.image_with_caption:active > img {
+  filter: blur(5px);
+  transition: 0.5s;
+}
+
+footer {
+  margin: 10px auto;
+  padding: 5px;
+  width: 320px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 5px solid #50b34d;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+footer:hover, footer:active {
+  border-bottom-color: #10821f;
+}
+
+@media (max-width: 599px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  div#interface {
+    width: auto;
+  }
+
+  section img#img_perfil {
+    width: 150px;
+  }
+
+  footer {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
