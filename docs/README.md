@@ -1,3 +1,3 @@
-# Project portfolio
+# Project 0
 
-My portfolio
+Web Programming with Python and JavaScript

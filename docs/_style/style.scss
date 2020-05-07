@@ -28,13 +28,14 @@ h1, h2, h3, h4, h5, h6 {
 div#interface {
     @extend %border-bottom-radius;
     margin: auto;
-    width: 80%;
+    width: 85%;
     box-shadow: $box_shadow_default;
 }
 header {
     nav#menu {
         ul {
             display: grid;
+            margin-bottom: 0px;
             grid-template-columns: auto auto auto auto;
             background-color: $green_dark;
             list-style: none;
@@ -44,6 +45,7 @@ header {
             text-align: center;
             border-bottom: 4px solid $green;
             transition: 0.2s;
+            font-size: 1em;
         }
         ul > li:hover, li:active {
             cursor: pointer;
@@ -54,7 +56,6 @@ header {
             text-transform: uppercase;
             text-align: center;
             text-decoration: none;
-            font-size: 14pt;
             color: white;
         }
     }
@@ -62,7 +63,6 @@ header {
 section {
     @extend %border-bottom-radius;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    margin-top: -16px;
     padding: 20px;
     background-color: $green_light;
     img#img_perfil {
@@ -132,6 +132,21 @@ footer:hover, footer:active {
 @media (max-width:599px) {
     body {
         font-size: 1.2em;
+    }
+    nav#menu {
+        ul {
+            display: flex;
+            justify-content: safe;
+            background-color: $green_dark;
+            list-style: none;
+        }
+        ul > li {
+            padding: 10px 0px;
+        }
+        ul a {
+            font-size: 0.8em;
+        }
+        
     }
     div#interface {
         width: auto;
