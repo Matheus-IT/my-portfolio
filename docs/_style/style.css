@@ -69,9 +69,9 @@ section img#img_perfil {
 .project {
   text-align: center;
 }
-.project .figures {
+.project div.figures {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .project figure.image_with_caption {
@@ -105,6 +105,16 @@ section img#img_perfil {
 .project figure.image_with_caption:hover > img, .project figure.image_with_caption:active > img {
   filter: blur(5px);
   transition: 0.5s;
+}
+
+.follow_me {
+  text-align: center;
+}
+.follow_me div.container {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 footer {

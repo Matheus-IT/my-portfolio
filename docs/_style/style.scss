@@ -74,9 +74,9 @@ section {
 }
 .project {
     text-align: center;
-    .figures {
+    div.figures {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-wrap: wrap;
     }
     figure.image_with_caption {
@@ -110,6 +110,15 @@ section {
     figure.image_with_caption:hover > img, figure.image_with_caption:active > img {
         filter: blur(5px);
         transition: 0.5s;
+    }
+}
+.follow_me {
+    text-align: center;
+    div.container {
+        display: flex;
+        width: 300px;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
 footer {
