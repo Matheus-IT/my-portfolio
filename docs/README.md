@@ -1,3 +1,3 @@
-# Project 0
+# My portfolio
 
-Web Programming with Python and JavaScript
+This is the base to my portfolio, it wll be up updated for every new project
