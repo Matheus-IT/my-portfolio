@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import {
+  Button,
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NextUIProvider,
+} from "@nextui-org/react";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +25,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {
+          <NextUIProvider>
+            <Navbar>
+              <NavbarBrand>
+                <p className="font-bold">Matheus</p>
+              </NavbarBrand>
+              <NavbarContent className="sm:flex gap-4" justify="center">
+                <NavbarItem isActive>
+                  <Link color="foreground" href="#">
+                    About
+                  </Link>
+                </NavbarItem>
+                <NavbarItem>
+                  <Link href="#" aria-current="page">
+                    Projects
+                  </Link>
+                </NavbarItem>
+                <NavbarItem>
+                  <Link color="foreground" href="#">
+                    Contacts
+                  </Link>
+                </NavbarItem>
+              </NavbarContent>
+            </Navbar>
+            {children}
+          </NextUIProvider>
+        }
+      </body>
     </html>
   );
 }
