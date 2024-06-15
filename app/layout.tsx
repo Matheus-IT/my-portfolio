@@ -10,6 +10,7 @@ import {
   NextUIProvider,
 } from "@nextui-org/react";
 import Link from "next/link";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,12 @@ export default function RootLayout({
           <NextUIProvider>
             <Navbar>
               <NavbarBrand>
+                <Image
+                  src="https://github.com/Matheus-IT.png"
+                  alt="Profile photo"
+                  width={50}
+                  height={50}
+                />
                 <p className="font-bold">Matheus</p>
               </NavbarBrand>
               <NavbarContent className="sm:flex gap-4" justify="center">
