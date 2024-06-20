@@ -26,7 +26,6 @@ export default function Navbar() {
           alt="Profile photo"
           className="mr-3"
         />
-        <p className="font-bold">Matheus</p>
       </NavbarBrand>
 
       <NavbarContent justify="center">
