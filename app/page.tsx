@@ -7,8 +7,8 @@ export default function Home() {
       <section className="hero-section">
         <h1 className="hero-main-text">
           Hello! I&apos;m{" "}
-          <span className="hero-main-text-highlight">Matheus Costa</span>.{" "}
-          <br /> I&apos;m a full-stack developer!
+          <span className="hero-main-text-highlight">Matheus Costa</span>
+          . <br /> I&apos;m a full-stack developer!
         </h1>
 
         <div className="flex justify-center gap-2 mb-8">
