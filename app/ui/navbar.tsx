@@ -21,11 +21,7 @@ export default function Navbar() {
   return (
     <NextUiNavbar className="bg-black text-white">
       <NavbarBrand>
-        <Avatar
-          src="https://github.com/Matheus-IT.png"
-          alt="Profile photo"
-          className="mr-3"
-        />
+        <Avatar src="images/me.jpeg" alt="Profile photo" className="mr-3" />
       </NavbarBrand>
 
       <NavbarContent justify="center">

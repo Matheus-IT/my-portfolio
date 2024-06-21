@@ -14,70 +14,70 @@ export default function Home() {
             height="40"
             width="40"
             alt="Matheus-React"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg"
+            src="images/dart-original.svg"
           ></Image>
 
           <Image
             height="40"
             width="40"
             alt="Matheus-React"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg"
+            src="images/flutter-original.svg"
           ></Image>
 
           <Image
             height="40"
             width="40"
             alt="Matheus-React"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+            src="images/react-original.svg"
           ></Image>
 
           <Image
             height="40"
             width="40"
             alt="Matheus-React"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
+            src="images/nextjs-original.svg"
           ></Image>
 
           <Image
             height="40"
             width="40"
             alt="Matheus-Javascript"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+            src="images/javascript-original.svg"
           ></Image>
 
           <Image
             height="40"
             width="40"
             alt="Matheus-Jquery"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg"
+            src="images/jquery-original.svg"
           ></Image>
 
           <Image
             height="40"
             width="40"
             alt="Matheus-Typescript"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+            src="images/typescript-original.svg"
           ></Image>
 
           <Image
             height="40"
             width="40"
             alt="Matheus-Django"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg"
+            src="images/django-plain.svg"
           ></Image>
 
           <Image
             height="40"
             width="40"
             alt="Matheus-Python"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+            src="images/python-original.svg"
           ></Image>
 
           <Image
             height="40"
             width="40"
             alt="Matheus-Docker"
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
+            src="images/docker-original.svg"
           ></Image>
         </div>
       </section>
