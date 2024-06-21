@@ -1,3 +1,4 @@
+import { Button } from "@nextui-org/react";
 import Image from "next/image";
 
 export default function Home() {
@@ -5,11 +6,12 @@ export default function Home() {
     <main className="flex items-center justify-center max-w-[1024px] mx-auto">
       <section className="hero-section">
         <h1 className="hero-main-text">
-          Hello! I&apos;m <span className="text-sky-950">Matheus Costa</span>.{" "}
+          Hello! I&apos;m{" "}
+          <span className="hero-main-text-highlight">Matheus Costa</span>.{" "}
           <br /> I&apos;m a full-stack developer!
         </h1>
 
-        <div className="flex justify-center gap-2">
+        <div className="flex justify-center gap-2 mb-8">
           <Image
             height="40"
             width="40"
@@ -79,6 +81,10 @@ export default function Home() {
             alt="Matheus-Docker"
             src="images/docker-original.svg"
           ></Image>
+        </div>
+
+        <div className="flex justify-center">
+          <Button>More</Button>
         </div>
       </section>
     </main>
