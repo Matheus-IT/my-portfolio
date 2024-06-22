@@ -19,24 +19,13 @@ body {
   }
 }
 
-.hero-main-text {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  width: fit-content;
-  margin: auto;
-  margin-top: 12rem;
-  margin-bottom: 2rem;
-  padding: 1rem 2.4rem;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-}
-.hero-main-text-highlight {
-  color: rgb(156, 220, 255);
+.hero-section {
+  display: flex;
+  align-items: center;
+  height: 40rem;
 }
 
-.hero-section {
-  width: 100%;
-  height: 40rem;
-  background-image: url('../public/images/hero-bg.svg');
-  background-size: cover;
+.hero-main-text {
+  border: 2px solid rgb(29, 29, 29);
+  padding: 2rem;
 }

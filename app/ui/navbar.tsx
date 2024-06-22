@@ -20,10 +20,6 @@ export default function Navbar() {
 
   return (
     <NextUiNavbar className="bg-black text-white">
-      <NavbarBrand>
-        <Avatar src="images/me.jpeg" alt="Profile photo" className="mr-3" />
-      </NavbarBrand>
-
       <NavbarContent justify="center">
         {links.map((l) => {
           return (
