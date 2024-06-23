@@ -19,6 +19,7 @@ export default function Home() {
             <Image
               height="40"
               width="40"
+              radius="none"
               alt="Matheus-React"
               src="images/dart-original.svg"
             ></Image>
@@ -26,6 +27,7 @@ export default function Home() {
             <Image
               height="40"
               width="40"
+              radius="none"
               alt="Matheus-React"
               src="images/flutter-original.svg"
             ></Image>
@@ -33,6 +35,7 @@ export default function Home() {
             <Image
               height="40"
               width="40"
+              radius="none"
               alt="Matheus-React"
               src="images/react-original.svg"
             ></Image>
@@ -40,6 +43,7 @@ export default function Home() {
             <Image
               height="40"
               width="40"
+              radius="none"
               alt="Matheus-React"
               src="images/nextjs-original.svg"
             ></Image>
@@ -47,6 +51,7 @@ export default function Home() {
             <Image
               height="40"
               width="40"
+              radius="none"
               alt="Matheus-Javascript"
               src="images/javascript-original.svg"
             ></Image>
@@ -54,6 +59,7 @@ export default function Home() {
             <Image
               height="40"
               width="40"
+              radius="none"
               alt="Matheus-Jquery"
               src="images/jquery-original.svg"
             ></Image>
@@ -61,6 +67,7 @@ export default function Home() {
             <Image
               height="40"
               width="40"
+              radius="none"
               alt="Matheus-Typescript"
               src="images/typescript-original.svg"
             ></Image>
@@ -68,6 +75,7 @@ export default function Home() {
             <Image
               height="40"
               width="40"
+              radius="none"
               alt="Matheus-Django"
               src="images/django-plain.svg"
             ></Image>
@@ -75,6 +83,7 @@ export default function Home() {
             <Image
               height="40"
               width="40"
+              radius="none"
               alt="Matheus-Python"
               src="images/python-original.svg"
             ></Image>
@@ -82,6 +91,7 @@ export default function Home() {
             <Image
               height="40"
               width="40"
+              radius="none"
               alt="Matheus-Docker"
               src="images/docker-original.svg"
             ></Image>
