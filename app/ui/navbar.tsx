@@ -13,14 +13,14 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const pathName = usePathname();
   const links = [
-    { name: "about", href: "/" },
-    { name: "projects", href: "/projects" },
-    { name: "contact", href: "/contact" },
+    { name: "About", href: "/" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
     <NextUiNavbar className="bg-black text-white">
-      <NavbarContent justify="center">
+      <NavbarContent>
         {links.map((l) => {
           return (
             <NavbarItem
@@ -28,9 +28,7 @@ export default function Navbar() {
               isActive={l.href == pathName}
               className="p-2 rounded hover:bg-neutral-800 transition-background duration-200"
             >
-              <Link href={l.href}>
-                {l.name.charAt(0).toUpperCase() + l.name.slice(1)}
-              </Link>
+              <Link href={l.href}>{l.name}</Link>
             </NavbarItem>
           );
         })}

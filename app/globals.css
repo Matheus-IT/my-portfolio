@@ -19,6 +19,12 @@ body {
   }
 }
 
+/* fix make navbar items centered */
+nav header {
+  display: flex;
+  justify-content: center !important;
+}
+
 .hero-section {
   display: flex;
   align-items: center;
@@ -28,4 +34,5 @@ body {
 .hero-main-text {
   border: 2px solid rgb(29, 29, 29);
   padding: 2rem;
+  width: 35rem;
 }
