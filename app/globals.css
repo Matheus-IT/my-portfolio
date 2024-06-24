@@ -36,4 +36,16 @@ nav header ul {
   border: 2px solid rgb(29, 29, 29);
   padding: 2rem;
   width: 35rem;
+  border-radius: 0.75rem;
+}
+
+.highlighted-project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 2px solid rgb(29, 29, 29);
 }
