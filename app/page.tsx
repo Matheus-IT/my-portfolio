@@ -1,4 +1,11 @@
-import { Button, Card, CardBody, CardHeader, Image } from "@nextui-org/react";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardHeader,
+  Chip,
+  Image,
+} from "@nextui-org/react";
 import { ArrowRight } from "lucide-react";
 
 export default function Home() {
@@ -9,19 +16,25 @@ export default function Home() {
       description:
         "A barbershop website where the user can book an appointment and see a real time queue",
       date: "Oct 2021",
+      technologies: [
+        "images/django-plain.svg",
+        "images/javascript-original.svg",
+      ],
     },
     {
       name: "Birthday Reminder",
       imgSrc: "images/projects/birthday-reminder1.png",
       description: "A simple app to remind birthdays via push notifications",
       date: "May 2024",
+      technologies: ["images/flutter-original.svg"],
     },
     {
-      name: "Barbershop",
-      imgSrc: "images/projects/barbershop1.png",
+      name: "Portfolio",
+      imgSrc: "images/projects/portfolio1.png",
       description:
-        "A barbershop website where the user can book an appointment and see a real time queue",
+        "The portfolio website you're accessing that showcases my hard work",
       date: "Oct 2021",
+      technologies: ["images/nextjs-original.svg"],
     },
   ];
 
@@ -135,23 +148,36 @@ export default function Home() {
       </section>
 
       <section className="highlighted-project-section">
-        <h1 className="text-xl mb-4 font-bold">
+        <h1 className="text-xl mb-8 font-bold">
           Take a look at my highlighted projects
         </h1>
 
-        <div className="flex gap-4 mb-4">
+        <div className="flex gap-4 mb-8">
           {highlightedProjects.map((p, i) => (
             <Card key={i} className="p-2">
-              <CardHeader className="flex-col items-start">
+              <CardHeader className="flex-col items-start pb-0">
                 <h4 className="font-bold text-large">{p.name}</h4>
-                <small className="text-default-500">{p.date}</small>
+                <div className="flex justify-between w-full">
+                  <small className="text-default-500">{p.date}</small>
+
+                  <div className="flex justify-center gap-1">
+                    {p.technologies.map((tech, i) => (
+                      <Image
+                        key={i}
+                        src={tech}
+                        width={20}
+                        alt="Technology used"
+                      />
+                    ))}
+                  </div>
+                </div>
                 <p className="text-sm">{p.description}</p>
               </CardHeader>
               <CardBody className="overflow-visible">
                 <Image
                   alt="Card image"
                   src={p.imgSrc}
-                  height={350}
+                  width={350}
                   className="object-cover"
                 />
               </CardBody>
