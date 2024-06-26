@@ -201,10 +201,10 @@ export default function Home() {
           alt="My profile image"
         />
 
-        <h1 className="text-xl mb-1 font-bold text-center">
+        <h1 className="text-xl mb-1 font-bold">
           Enjoyed my work? Let&apos;s work together!
         </h1>
-        <p className="text-base text-center mb-2">
+        <p className="text-base mb-2">
           I&apos;m always up for a chat. Give me a shout on social media.
         </p>
 
@@ -239,6 +239,10 @@ export default function Home() {
           </svg>
         </div>
       </section>
+
+      <footer className="footer-section">
+        <p className="text-base">Matheus Costa 2024</p>
+      </footer>
     </main>
   );
 }
