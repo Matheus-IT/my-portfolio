@@ -237,7 +237,7 @@ export default function Home() {
       </section>
 
       <footer className="footer-section">
-        <p className="text-base">Matheus Costa 2024</p>
+        <p className="text-base">Matheus Costa - 2024</p>
       </footer>
     </main>
   );
