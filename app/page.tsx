@@ -17,8 +17,8 @@ export default function Home() {
         "A barbershop website where the user can book an appointment and see a real time queue",
       date: "Oct 2021",
       technologies: [
-        "images/django-plain.svg",
-        "images/javascript-original.svg",
+        { name: "django", src: "images/django-plain.svg" },
+        { name: "javascript", src: "images/javascript-original.svg" },
       ],
     },
     {
@@ -26,7 +26,7 @@ export default function Home() {
       imgSrc: "images/projects/birthday-reminder1.png",
       description: "A simple app to remind birthdays via push notifications",
       date: "May 2024",
-      technologies: ["images/flutter-original.svg"],
+      technologies: [{ name: "flutter", src: "images/flutter-original.svg" }],
     },
     {
       name: "Portfolio",
@@ -34,7 +34,7 @@ export default function Home() {
       description:
         "The portfolio website you're accessing that showcases my hard work",
       date: "Oct 2021",
-      technologies: ["images/nextjs-original.svg"],
+      technologies: [{ name: "nextjs", src: "images/nextjs-original.svg" }],
     },
   ];
 
@@ -154,7 +154,7 @@ export default function Home() {
 
         <div className="flex gap-4 mb-8">
           {highlightedProjects.map((p, i) => (
-            <Card key={i} className="p-2">
+            <Card key={i} className="flex-grow basis-0 p-2">
               <CardHeader className="flex-col items-start pb-0">
                 <h4 className="font-bold text-large">{p.name}</h4>
                 <div className="flex justify-between w-full">
@@ -164,9 +164,10 @@ export default function Home() {
                     {p.technologies.map((tech, i) => (
                       <Image
                         key={i}
-                        src={tech}
+                        src={tech.src}
                         width={20}
                         alt="Technology used"
+                        title={tech.name}
                       />
                     ))}
                   </div>
@@ -174,12 +175,7 @@ export default function Home() {
                 <p className="text-sm">{p.description}</p>
               </CardHeader>
               <CardBody className="overflow-visible">
-                <Image
-                  alt="Card image"
-                  src={p.imgSrc}
-                  width={350}
-                  className="object-cover"
-                />
+                <Image alt="Card image" src={p.imgSrc} width={350} isZoomed />
               </CardBody>
             </Card>
           ))}
