@@ -7,6 +7,7 @@ import {
   Image,
 } from "@nextui-org/react";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   const highlightedProjects = [
@@ -147,7 +148,10 @@ export default function Home() {
         />
       </section>
 
-      <section className="highlighted-project-section">
+      <section
+        id="highlighted-project-section"
+        className="highlighted-project-section"
+      >
         <h1 className="text-xl mb-8 font-bold">
           Take a look at my highlighted projects
         </h1>
@@ -182,14 +186,16 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center">
-          <Button className="bg-black text-white">
-            See all
-            <ArrowRight />
-          </Button>
+          <Link href="/projects">
+            <Button className="bg-black text-white">
+              See all
+              <ArrowRight />
+            </Button>
+          </Link>
         </div>
       </section>
 
-      <section className="contact-section">
+      <section id="contact-section" className="contact-section">
         <Image
           className="rounded-full mb-8"
           width={100}

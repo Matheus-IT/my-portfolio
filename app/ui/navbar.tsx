@@ -14,12 +14,12 @@ export default function Navbar() {
   const pathName = usePathname();
   const links = [
     { name: "About", href: "/" },
-    { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
+    { name: "Main Projects", href: "#highlighted-project-section" },
+    { name: "Contact", href: "#contact-section" },
   ];
 
   return (
-    <NextUiNavbar className="bg-black text-white">
+    <NextUiNavbar className="backdrop-blur-md bg-black/90 text-white">
       <NavbarContent>
         {links.map((l) => {
           return (
