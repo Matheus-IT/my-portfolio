@@ -8,36 +8,10 @@ import {
 } from "@nextui-org/react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { allProjects, allTechnologies } from "./data";
 
 export default function Home() {
-  const highlightedProjects = [
-    {
-      name: "Barbershop",
-      imgSrc: "images/projects/barbershop1.png",
-      description:
-        "A barbershop website where the user can book an appointment and see a real time queue",
-      date: "Oct 2021",
-      technologies: [
-        { name: "django", src: "images/django-plain.svg" },
-        { name: "javascript", src: "images/javascript-original.svg" },
-      ],
-    },
-    {
-      name: "Birthday Reminder",
-      imgSrc: "images/projects/birthday-reminder1.png",
-      description: "A simple app to remind birthdays via push notifications",
-      date: "May 2024",
-      technologies: [{ name: "flutter", src: "images/flutter-original.svg" }],
-    },
-    {
-      name: "Portfolio",
-      imgSrc: "images/projects/portfolio1.png",
-      description:
-        "The portfolio website you're accessing that showcases my hard work",
-      date: "Oct 2021",
-      technologies: [{ name: "nextjs", src: "images/nextjs-original.svg" }],
-    },
-  ];
+  const highlightedProjects = allProjects.slice(0, 3);
 
   return (
     <main className="max-w-[1024px] mx-auto">
@@ -54,85 +28,16 @@ export default function Home() {
             React, Flutter and Django.
           </p>
           <div className="flex justify-center gap-2 mb-8">
-            <Image
-              height="40"
-              width="40"
-              radius="none"
-              alt="Matheus-React"
-              src="images/dart-original.svg"
-            ></Image>
-
-            <Image
-              height="40"
-              width="40"
-              radius="none"
-              alt="Matheus-React"
-              src="images/flutter-original.svg"
-            ></Image>
-
-            <Image
-              height="40"
-              width="40"
-              radius="none"
-              alt="Matheus-React"
-              src="images/react-original.svg"
-            ></Image>
-
-            <Image
-              height="40"
-              width="40"
-              radius="none"
-              alt="Matheus-React"
-              src="images/nextjs-original.svg"
-            ></Image>
-
-            <Image
-              height="40"
-              width="40"
-              radius="none"
-              alt="Matheus-Javascript"
-              src="images/javascript-original.svg"
-            ></Image>
-
-            <Image
-              height="40"
-              width="40"
-              radius="none"
-              alt="Matheus-Jquery"
-              src="images/jquery-original.svg"
-            ></Image>
-
-            <Image
-              height="40"
-              width="40"
-              radius="none"
-              alt="Matheus-Typescript"
-              src="images/typescript-original.svg"
-            ></Image>
-
-            <Image
-              height="40"
-              width="40"
-              radius="none"
-              alt="Matheus-Django"
-              src="images/django-plain.svg"
-            ></Image>
-
-            <Image
-              height="40"
-              width="40"
-              radius="none"
-              alt="Matheus-Python"
-              src="images/python-original.svg"
-            ></Image>
-
-            <Image
-              height="40"
-              width="40"
-              radius="none"
-              alt="Matheus-Docker"
-              src="images/docker-original.svg"
-            ></Image>
+            {Object.entries(allTechnologies).map(([key, tech]) => (
+              <Image
+                key={key}
+                height="40"
+                width="40"
+                radius="none"
+                alt="Image of a technology I use"
+                src={tech.src}
+              ></Image>
+            ))}
           </div>
 
           <div className="flex justify-center">
@@ -165,13 +70,13 @@ export default function Home() {
                   <small className="text-default-500">{p.date}</small>
 
                   <div className="flex justify-center gap-1">
-                    {p.technologies.map((tech, i) => (
+                    {Object.entries(p.technologies).map(([key, tech]) => (
                       <Image
-                        key={i}
-                        src={tech.src}
+                        key={key}
+                        src={allTechnologies[tech].src}
                         width={20}
                         alt="Technology used"
-                        title={tech.name}
+                        title={allTechnologies[tech].name}
                       />
                     ))}
                   </div>
