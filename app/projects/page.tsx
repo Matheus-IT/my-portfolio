@@ -1,12 +1,18 @@
 import { Button, Card, CardBody, CardHeader, Image } from "@nextui-org/react";
-import { ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { allProjects, allTechnologies } from "../data";
 
 export default function Projects() {
   return (
-    <main className="max-w-[1024px] mx-auto">
-      <h1 className="text-xl text-center my-8 font-bold">
+    <main className="max-w-[1024px] mx-auto pt-8">
+      <Link href="/">
+        <Button className="bg-black text-white">
+          <ArrowLeft />
+        </Button>
+      </Link>
+
+      <h1 className="text-xl text-center mb-8 font-bold">
         These are all my projects
       </h1>
 
