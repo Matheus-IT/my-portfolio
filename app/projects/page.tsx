@@ -1,4 +1,11 @@
-import { Button, Card, CardBody, CardHeader, Image } from "@nextui-org/react";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardHeader,
+  Image,
+  CardFooter,
+} from "@nextui-org/react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { allProjects, allTechnologies } from "../data";
@@ -38,9 +45,16 @@ export default function Projects() {
               </div>
               <p className="text-sm">{p.description}</p>
             </CardHeader>
+
             <CardBody className="overflow-visible">
               <Image alt="Card image" src={p.imgSrc} width={350} isZoomed />
             </CardBody>
+
+            <CardFooter>
+              <Link className="ml-auto" href={`/projects/${p.id}`}>
+                <Button className="bg-black text-white">See details</Button>
+              </Link>
+            </CardFooter>
           </Card>
         ))}
       </div>

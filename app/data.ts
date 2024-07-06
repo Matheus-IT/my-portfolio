@@ -20,6 +20,7 @@ export const allTechnologies: AllTechs = {
 
 export const allProjects = [
   {
+    id: 1,
     name: "Barbershop",
     imgSrc: "images/projects/barbershop1.png",
     description:
@@ -28,6 +29,7 @@ export const allProjects = [
     technologies: [1, 2, 3],
   },
   {
+    id: 2,
     name: "Birthday Reminder",
     imgSrc: "images/projects/birthday-reminder1.png",
     description: "A simple app to remind birthdays via push notifications",
@@ -35,6 +37,7 @@ export const allProjects = [
     technologies: [8, 9],
   },
   {
+    id: 3,
     name: "Portfolio",
     imgSrc: "images/projects/portfolio1.png",
     description:
