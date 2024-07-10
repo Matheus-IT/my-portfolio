@@ -73,6 +73,10 @@ nav header ul {
   height: 6rem;
 }
 
+.project-section {
+  border: 1px solid rgb(29, 29, 29, 0.5);
+}
+
 .see-more-section {
   border: 1px solid rgb(29, 29, 29, 0.5);
 }
