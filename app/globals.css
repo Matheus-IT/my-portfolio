@@ -46,7 +46,7 @@ nav header ul {
   align-items: center;
   height: 42rem;
   padding: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   border-radius: 0.75rem;
   border: 1px solid rgb(29, 29, 29, 0.5);
 }
@@ -57,7 +57,7 @@ nav header ul {
   align-items: center;
   justify-content: center;
   height: 28rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   border-radius: 0.75rem;
   box-shadow: rgba(71, 74, 78, 0.2) 0px 8px 24px;
 }

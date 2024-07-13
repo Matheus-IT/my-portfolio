@@ -9,6 +9,7 @@ import {
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { allProjects, allTechnologies } from "../data";
+import Footer from "../ui/footer";
 
 export default function Projects() {
   return (
@@ -23,7 +24,7 @@ export default function Projects() {
         These are all my projects
       </h1>
 
-      <div className="flex gap-4 mb-8">
+      <div className="flex gap-4 mb-16">
         {allProjects.map((p, i) => (
           <Card key={i} className="flex-grow basis-0 p-2">
             <CardHeader className="flex-col items-start pb-0">
@@ -58,6 +59,8 @@ export default function Projects() {
           </Card>
         ))}
       </div>
+
+      <Footer />
     </main>
   );
 }

@@ -16,6 +16,7 @@ import {
 import Link from "next/link";
 import { allProjects, allTechnologies } from "./data";
 import Navbar from "./ui/navbar";
+import Footer from "./ui/footer";
 
 export default function Home() {
   const highlightedProjects = allProjects.slice(0, 3);
@@ -141,9 +142,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="footer-section">
-          <p className="text-base">Matheus Costa - 2024</p>
-        </footer>
+        <Footer />
       </main>
     </>
   );
