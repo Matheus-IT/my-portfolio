@@ -2,6 +2,7 @@ import {
   Button,
   Card,
   CardBody,
+  CardFooter,
   CardHeader,
   Chip,
   Image,
@@ -32,9 +33,9 @@ export default function Home() {
             <br />
             <span className="text-xl">Full-stack developer!</span>
             <p className="text-base mb-6">
-              Over 3 years of experience in the tech industry. I specialize in
-              building web and mobile applications using technologies such as
-              React, Flutter and Django.
+              Over <strong>3 years of experience</strong> in the tech industry.
+              I specialize in building web and mobile applications using
+              technologies such as React, Flutter and Django.
             </p>
             <div className="flex justify-center gap-2 mb-8">
               {Object.entries(allTechnologies).map(([key, tech]) => (
@@ -92,9 +93,16 @@ export default function Home() {
                   </div>
                   <p className="text-sm">{p.description}</p>
                 </CardHeader>
+
                 <CardBody className="overflow-visible">
                   <Image alt="Card image" src={p.imgSrc} width={350} isZoomed />
                 </CardBody>
+
+                <CardFooter>
+                  <Link className="ml-auto" href={`/projects/${p.id}`}>
+                    <Button className="bg-black text-white">See details</Button>
+                  </Link>
+                </CardFooter>
               </Card>
             ))}
           </div>

@@ -1,6 +1,6 @@
 import { allProjects, allTechnologies } from "@/app/data";
 import { Button, Image as NextUiImage } from "@nextui-org/react";
-import Image from "next/image";
+
 import {
   ArrowLeft,
   GithubIcon,
@@ -45,12 +45,11 @@ export default function Project({ params }: { params: { projectId: number } }) {
 
           <h1 className="text-2xl">{project.name}</h1>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
-            optio praesentium quis exercitationem vel a consequatur, minus
-            eveniet labore dolor repudiandae! Expedita facere laudantium quae
-            tempore corrupti voluptatem. Deserunt, excepturi?
-          </p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: project.detailedDescription,
+            }}
+          ></p>
         </div>
       </div>
 
@@ -59,15 +58,18 @@ export default function Project({ params }: { params: { projectId: number } }) {
           Take a look at this project
         </span>
 
-        <Link href="/projects/" className="m-auto">
-          <Button className="bg-black text-white flex justify-between w-[170px]">
+        <Link href="" className="m-auto">
+          <Button
+            className="bg-black text-white flex justify-between w-[170px]"
+            isDisabled
+          >
             <Globe />
             <span>Live demo</span>
             <LucideArrowUpRightFromSquare />
           </Button>
         </Link>
 
-        <Link href="/projects/" className="m-auto">
+        <Link href={project.repositoryLink} className="m-auto" target="_blank">
           <Button className="bg-black text-white flex justify-between w-[170px]">
             <GithubIcon />
             <span>Code</span>
