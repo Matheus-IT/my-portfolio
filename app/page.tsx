@@ -7,16 +7,13 @@ import {
   Chip,
   Image,
 } from "@nextui-org/react";
-import {
-  ArrowRight,
-  GithubIcon,
-  InstagramIcon,
-  LinkedinIcon,
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { allProjects, allTechnologies } from "./data";
 import Navbar from "./ui/navbar";
 import Footer from "./ui/footer";
+import SocialMediaIconButton from "./ui/socialMediaIconButton";
+import { GithubIcon, InstagramIcon, LinkedinIcon } from "./ui/myIcons";
 
 export default function Home() {
   const highlightedProjects = allProjects.slice(0, 3);
@@ -134,11 +131,17 @@ export default function Home() {
           </p>
 
           <div className="flex gap-2 justify-center">
-            <GithubIcon />
+            <SocialMediaIconButton href="https://github.com/Matheus-IT">
+              <GithubIcon />
+            </SocialMediaIconButton>
 
-            <LinkedinIcon />
+            <SocialMediaIconButton href="https://www.linkedin.com/in/matheus-tech/">
+              <LinkedinIcon />
+            </SocialMediaIconButton>
 
-            <InstagramIcon />
+            <SocialMediaIconButton href="https://www.instagram.com/matheus_tech_/">
+              <InstagramIcon />
+            </SocialMediaIconButton>
           </div>
         </section>
 
