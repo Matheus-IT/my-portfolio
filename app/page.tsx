@@ -17,6 +17,13 @@ import { GithubIcon, InstagramIcon, LinkedinIcon } from "./ui/myIcons";
 
 export default function Home() {
   const highlightedProjects = allProjects.slice(0, 3);
+  const yearsOfExperience = getYearsOfExperience();
+
+  function getYearsOfExperience() {
+    const startDate = new Date("2021-02-01");
+    const today = new Date();
+    return today.getFullYear() - startDate.getFullYear();
+  }
 
   return (
     <>
@@ -31,9 +38,9 @@ export default function Home() {
             <br />
             <span className="text-xl">Full-stack developer!</span>
             <p className="text-base mb-6">
-              Over <strong>3 years of experience</strong> in the tech industry.
-              I specialize in building web and mobile applications using
-              technologies such as React, Flutter and Django.
+              Over <strong>{yearsOfExperience} years of experience</strong> in
+              the tech industry. I specialize in building web and mobile
+              applications using technologies such as React, Flutter and Django.
             </p>
             <div className="flex justify-center gap-2 mb-8">
               {Object.entries(allTechnologies).map(([key, tech]) => (
