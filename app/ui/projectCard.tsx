@@ -33,7 +33,12 @@ export default function ProjectCard({ project }: { project: Project }) {
       </CardHeader>
 
       <CardBody className="overflow-visible">
-        <Image alt="Card image" src={project.imgSrc} width={350} isZoomed />
+        <div className="overflow-hidden inline-block rounded-md">
+          <div
+            style={{ backgroundImage: `url('${"/" + project.imgSrc}')` }}
+            className={`w-[100%] h-[10rem] bg-cover bg-top rounded-md hover:scale-110 transition-transform duration-250`}
+          ></div>
+        </div>
       </CardBody>
 
       <CardFooter>
