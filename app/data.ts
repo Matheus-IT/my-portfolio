@@ -19,7 +19,18 @@ export const allTechnologies: AllTechs = {
 };
 
 const githubUsername = "Matheus-IT";
-export const allProjects = [
+export type Project = {
+  id: number;
+  name: string;
+  imgSrc: string;
+  liveDemoLink: string;
+  repositoryLink: string;
+  description: string;
+  detailedDescription: string;
+  date: string;
+  technologies: number[];
+};
+export const allProjects: Project[] = [
   {
     id: 1,
     name: "Barbershop",
