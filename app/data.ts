@@ -95,7 +95,7 @@ export const allProjects: Project[] = [
     id: 3,
     name: "Bounce breaker",
     imgSrc: "images/projects/bounce-breaker1.jpeg",
-    liveDemoLink: "https://github.com/tvlas/bounce-breaker-mania",
+    liveDemoLink: "https://tvlas.github.io/bounce-breaker-mania",
     repositoryLink: `https://github.com/tvlas/bounce-breaker-mania`,
     description:
       "A casual game, multiplatform, built with the flutter flame engine",

@@ -61,16 +61,28 @@ export default function Project({ params }: { params: { projectId: number } }) {
               Take a look at this project
             </span>
 
-            <Link href="" className="m-auto">
+            {project.liveDemoLink == "" ? (
               <Button
-                className="bg-black text-white flex justify-between w-[170px]"
+                className="bg-black text-white flex justify-between m-auto w-[170px]"
                 isDisabled
               >
                 <Globe />
                 <span>Live demo</span>
                 <LucideArrowUpRightFromSquare />
               </Button>
-            </Link>
+            ) : (
+              <Link
+                href={project.liveDemoLink}
+                target="_blank"
+                className="m-auto"
+              >
+                <Button className="bg-black text-white flex justify-between w-[170px]">
+                  <Globe />
+                  <span>Live demo</span>
+                  <LucideArrowUpRightFromSquare />
+                </Button>
+              </Link>
+            )}
 
             <Link
               href={project.repositoryLink}
