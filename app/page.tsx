@@ -57,7 +57,9 @@ export default function Home() {
             </div>
 
             <div className="flex justify-center">
-              <Button className="bg-black text-white">My resume</Button>
+              <Link href="my-cv.pdf" target="_blank">
+                <Button className="bg-black text-white">My resume</Button>
+              </Link>
             </div>
           </div>
 
