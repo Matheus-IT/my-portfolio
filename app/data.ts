@@ -93,6 +93,35 @@ export const allProjects: Project[] = [
   },
   {
     id: 3,
+    name: "Bounce breaker",
+    imgSrc: "images/projects/bounce-breaker1.jpeg",
+    liveDemoLink: "https://github.com/tvlas/bounce-breaker-mania",
+    repositoryLink: `https://github.com/tvlas/bounce-breaker-mania`,
+    description:
+      "A casual game, multiplatform, built with the flutter flame engine",
+    detailedDescription: `
+      <p class="text-base mt-2">Main Rules:</p>
+
+      <ul class="list-disc list-inside">
+        <li>Make the ball hit the bricks to earn more points</li>
+        <li>If all bricks break, go to the next level</li>
+        <li>The harder the brick, more is the probability to gain a powerup</li>
+        <li>Powerups can make an auxiliar ball show up, increase speed or enlarge the player stick</li>
+      </ul>
+
+      <p class="text-base text-justify mt-2">
+        I built this game during a collage course with other two friends. It was a bit challenging, because even though I had experience with <em>Flutter</em>, I haven't used the flutter <em>Flame Engine</em> before.
+      </p>
+
+      <p class="text-base text-justify mt-2">
+        The experience of building this game was awesome, on top of that I learned a lot with my friends when we gathered to discuss about the features, implementation details and suggestions.
+      </p>
+    `,
+    date: "May 2024",
+    technologies: [8, 9],
+  },
+  {
+    id: 4,
     name: "Portfolio",
     imgSrc: "images/projects/portfolio1.png",
     liveDemoLink: "",

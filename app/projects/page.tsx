@@ -25,7 +25,7 @@ export default function Projects() {
         These are all my projects
       </h1>
 
-      <div className="flex gap-4 mb-16">
+      <div className="grid grid-cols-3 gap-4 mb-16">
         {allProjects.map((p, i) => (
           <ProjectCard key={p.id} project={p} />
         ))}
