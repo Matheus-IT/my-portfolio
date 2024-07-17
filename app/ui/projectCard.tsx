@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="flex-grow basis-0 p-2">
+    <Card className="max-sm:w-[24rem] p-2">
       <CardHeader className="flex-col items-start pb-0">
         <h4 className="font-bold text-large">{project.name}</h4>
         <div className="flex justify-between w-full">
@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <div className="overflow-hidden inline-block rounded-md">
           <div
             style={{ backgroundImage: `url('${"/" + project.imgSrc}')` }}
-            className={`w-[100%] h-[10rem] bg-cover bg-top rounded-md hover:scale-110 transition-transform duration-250`}
+            className="w-[100%] h-[12rem] max-sm:h-[18rem] bg-cover bg-top rounded-md hover:scale-110 transition-transform duration-250"
           ></div>
         </div>
       </CardBody>

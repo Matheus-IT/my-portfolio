@@ -75,13 +75,13 @@ export default function Home() {
 
         <section
           id="highlighted-project-section"
-          className="highlighted-project-section"
+          className="highlighted-project-section flex flex-col justify-center items-center p-4 max-sm:m-2 max-lg:m-4 mb-24"
         >
           <h1 className="text-xl mb-8 font-bold">
             Take a look at my highlighted projects
           </h1>
 
-          <div className="flex gap-4 mb-8">
+          <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 mb-8">
             {highlightedProjects.map((p, i) => (
               <ProjectCard key={p.id} project={p} />
             ))}
