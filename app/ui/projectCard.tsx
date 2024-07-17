@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="max-sm:w-[24rem] p-2">
+    <Card className="p-2">
       <CardHeader className="flex-col items-start pb-0">
         <h4 className="font-bold text-large">{project.name}</h4>
         <div className="flex justify-between w-full">

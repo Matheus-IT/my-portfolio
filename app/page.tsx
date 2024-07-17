@@ -31,7 +31,7 @@ export default function Home() {
       <Navbar />
       <main className="max-w-[1024px] mx-auto">
         <section className="hero-section flex items-center max-md:flex-col-reverse min-h-[40rem]">
-          <div className="hero-main-text grow-[3] basis-0 p-8 max-sm:m-2 max-lg:m-4">
+          <div className="hero-main-text grow-[3] basis-0 p-8 max-sm:m-2 max-xl:m-4">
             <em className="text-2xl">
               Hello! I&apos;m{" "}
               <span className="text-sky-700">Matheus Costa!</span>
@@ -75,13 +75,13 @@ export default function Home() {
 
         <section
           id="highlighted-project-section"
-          className="highlighted-project-section flex flex-col justify-center items-center p-4 max-sm:m-2 max-lg:m-4 mb-24"
+          className="highlighted-project-section flex flex-col justify-center items-center p-4 max-sm:m-2 max-xl:m-4 mb-24"
         >
           <h1 className="text-xl mb-8 font-bold">
             Take a look at my highlighted projects
           </h1>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 mb-8">
+          <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4 mb-8">
             {highlightedProjects.map((p, i) => (
               <ProjectCard key={p.id} project={p} />
             ))}
@@ -99,7 +99,7 @@ export default function Home() {
 
         <section
           id="contact-section"
-          className="contact-section flex flex-col justify-center items-center h-[28rem] max-sm:m-2 max-lg:m-4 mb-24"
+          className="contact-section flex flex-col justify-center items-center h-[28rem] max-sm:m-2 max-xl:m-4 mb-24"
         >
           <Image
             className="rounded-full mb-8"
