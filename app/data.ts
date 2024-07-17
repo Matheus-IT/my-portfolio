@@ -105,8 +105,8 @@ export const allProjects: Project[] = [
       <ul class="list-disc list-inside">
         <li>Make the ball hit the bricks to earn more points</li>
         <li>If all bricks break, go to the next level</li>
-        <li>The harder the brick, more is the probability to gain a powerup</li>
-        <li>Powerups can make an auxiliar ball show up, increase speed or enlarge the player stick</li>
+        <li>The harder the brick, more is the probability to gain a power-up</li>
+        <li>Power-ups can make an auxiliar ball show up, increase speed or enlarge the player stick</li>
       </ul>
 
       <p class="text-base text-justify mt-2">

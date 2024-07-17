@@ -30,8 +30,8 @@ export default function Home() {
     <>
       <Navbar />
       <main className="max-w-[1024px] mx-auto">
-        <section className="hero-section">
-          <div className="hero-main-text">
+        <section className="hero-section flex items-center max-md:flex-col-reverse min-h-[40rem]">
+          <div className="hero-main-text grow-[3] basis-0 p-8 max-sm:m-2 max-lg:m-4">
             <em className="text-2xl">
               Hello! I&apos;m{" "}
               <span className="text-sky-700">Matheus Costa!</span>
@@ -63,12 +63,14 @@ export default function Home() {
             </div>
           </div>
 
-          <Image
-            width={500}
-            height={500}
-            alt="Hero image"
-            src="images/hero-img.png"
-          />
+          <div className="grow-[2] basis-0">
+            <Image
+              width={500}
+              height={500}
+              alt="Hero image"
+              src="images/hero-img.png"
+            />
+          </div>
         </section>
 
         <section
