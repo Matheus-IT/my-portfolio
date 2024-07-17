@@ -97,7 +97,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact-section" className="contact-section">
+        <section
+          id="contact-section"
+          className="contact-section flex flex-col justify-center items-center h-[28rem] max-sm:m-2 max-lg:m-4 mb-24"
+        >
           <Image
             className="rounded-full mb-8"
             width={100}
