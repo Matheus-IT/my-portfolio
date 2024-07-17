@@ -30,8 +30,8 @@ export default function Home() {
     <>
       <Navbar />
       <main className="max-w-[1024px] mx-auto">
-        <section className="hero-section flex items-center max-md:flex-col-reverse min-h-[40rem]">
-          <div className="hero-main-text grow-[3] basis-0 p-8 max-sm:m-2 max-xl:m-4">
+        <section className="hero-section flex items-center max-md:flex-col-reverse lg:my-[7rem]">
+          <div className="hero-main-text grow-[3] basis-0 p-8 max-sm:p-4 max-sm:m-2 max-xl:m-4">
             <em className="text-2xl">
               Hello! I&apos;m{" "}
               <span className="text-sky-700">Matheus Costa!</span>
@@ -63,7 +63,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grow-[2] basis-0">
+          <div className="grow-[2] basis-0 max-sm:w-[16rem]">
             <Image
               width={500}
               height={500}
@@ -75,7 +75,7 @@ export default function Home() {
 
         <section
           id="highlighted-project-section"
-          className="highlighted-project-section flex flex-col justify-center items-center p-4 max-sm:m-2 max-xl:m-4 mb-24"
+          className="highlighted-project-section flex flex-col justify-center items-center p-4 max-sm:m-2 max-xl:m-4"
         >
           <h1 className="text-xl mb-8 font-bold">
             Take a look at my highlighted projects
@@ -99,7 +99,7 @@ export default function Home() {
 
         <section
           id="contact-section"
-          className="contact-section flex flex-col justify-center items-center h-[28rem] max-sm:m-2 max-xl:m-4 mb-24"
+          className="contact-section flex flex-col justify-center items-center h-[28rem] md:my-16 max-sm:m-2 max-sm:my-8 max-xl:m-4 p-4 max-sm:text-center"
         >
           <Image
             className="rounded-full mb-8"
