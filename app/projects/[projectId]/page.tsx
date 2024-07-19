@@ -56,7 +56,7 @@ export default function Project({ params }: { params: { projectId: number } }) {
             </div>
           </div>
 
-          <div className="see-more-section flex flex-col gap-2 p-4 rounded-lg max-md:w-full min-w-[fit-content] max-md:text-center">
+          <div className="see-more-section flex flex-col gap-2 p-4 rounded-lg max-md:w-full lg:min-w-[fit-content] max-md:text-center">
             <span className="text-lg mb-1 font-bold">
               Take a look at this project
             </span>
