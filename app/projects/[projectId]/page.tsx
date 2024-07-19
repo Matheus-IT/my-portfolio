@@ -17,7 +17,7 @@ export default function Project({ params }: { params: { projectId: number } }) {
   return (
     <>
       <main className=" max-w-[1024px] mx-auto pt-8">
-        <div className="flex gap-4 items-start mb-16">
+        <div className="flex gap-4 items-start m-4 mb-16 max-md:flex-col">
           <div className="project-section relative rounded-lg">
             <Link className="absolute left-2 top-2 z-20" href="/projects/">
               <Button className="bg-black text-white border border-white border-solid">
@@ -56,45 +56,39 @@ export default function Project({ params }: { params: { projectId: number } }) {
             </div>
           </div>
 
-          <div className="see-more-section flex flex-col gap-2 p-4 rounded-lg min-w-[fit-content]">
+          <div className="see-more-section flex flex-col gap-2 p-4 rounded-lg min-w-[fit-content] max-md:w-[100%] max-md:text-center">
             <span className="text-lg mb-1 font-bold">
               Take a look at this project
             </span>
 
-            {project.liveDemoLink == "" ? (
-              <Button
-                className="bg-black text-white flex justify-between m-auto w-[170px]"
-                isDisabled
-              >
-                <Globe />
-                <span>Live demo</span>
-                <LucideArrowUpRightFromSquare />
-              </Button>
-            ) : (
-              <Link
-                href={project.liveDemoLink}
-                target="_blank"
-                className="m-auto"
-              >
-                <Button className="bg-black text-white flex justify-between w-[170px]">
+            <div className="flex flex-col justify-center items-center gap-2 max-md:flex-row">
+              {project.liveDemoLink == "" ? (
+                <Button
+                  className="bg-black text-white flex justify-between w-[170px]"
+                  isDisabled
+                >
                   <Globe />
                   <span>Live demo</span>
                   <LucideArrowUpRightFromSquare />
                 </Button>
-              </Link>
-            )}
+              ) : (
+                <Link href={project.liveDemoLink} target="_blank">
+                  <Button className="bg-black text-white flex justify-between w-[170px]">
+                    <Globe />
+                    <span>Live demo</span>
+                    <LucideArrowUpRightFromSquare />
+                  </Button>
+                </Link>
+              )}
 
-            <Link
-              href={project.repositoryLink}
-              className="m-auto"
-              target="_blank"
-            >
-              <Button className="bg-black text-white flex justify-between w-[170px]">
-                <GithubIcon />
-                <span>Code</span>
-                <LucideArrowUpRightFromSquare />
-              </Button>
-            </Link>
+              <Link href={project.repositoryLink} target="_blank">
+                <Button className="bg-black text-white flex justify-between w-[170px]">
+                  <GithubIcon />
+                  <span>Code</span>
+                  <LucideArrowUpRightFromSquare />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
 
