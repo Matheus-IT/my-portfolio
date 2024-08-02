@@ -148,4 +148,32 @@ export const allProjects: Project[] = [
     date: "Jul 2024",
     technologies: [4, 5, 6],
   },
+  {
+    id: 5,
+    name: "Battleship Game",
+    imgSrc: "images/projects/battleship1.png",
+    liveDemoLink: "https://matheus-it.github.io/battleship-game/",
+    repositoryLink: `https://github.com/${githubUsername}/battleship-game`,
+    description:
+      "A battleship game built with JavaScript to improve my logic and problem solving process",
+    detailedDescription: `
+      <p class="text-base mt-2">Main Functionalities:</p>
+
+      <ul class="list-disc list-inside">
+        <li>The player has a given number of attempts to sink a battleship</li>
+        <li>A battleship consist of a number of cells, placed horizontally or vertically</li>
+        <li>The player can click on a cell and then receive a feedback whether a battleship was hit or not</li>
+      </ul>
+
+      <p class="text-base text-justify mt-2">
+        I love building games, because they're amusing to build and also pushes me to my limits of critical thinking
+      </p>
+
+      <p class="text-base text-justify mt-2">
+        For technologies, I used <em>JavaScript</em>, <em>HTML</em> and <em>CSS</em>.
+      </p>
+    `,
+    date: "Jul 2020",
+    technologies: [3],
+  },
 ];
