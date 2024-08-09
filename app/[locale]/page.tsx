@@ -9,14 +9,16 @@ import {
 } from "@nextui-org/react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { allProjects, allTechnologies } from "./data";
-import Navbar from "./ui/navbar";
-import Footer from "./ui/footer";
-import SocialMediaIconButton from "./ui/socialMediaIconButton";
-import { GithubIcon, InstagramIcon, LinkedinIcon } from "./ui/myIcons";
-import ProjectCard from "./ui/projectCard";
+import { allProjects, allTechnologies } from "../data";
+import Navbar from "../ui/navbar";
+import Footer from "../ui/footer";
+import SocialMediaIconButton from "../ui/socialMediaIconButton";
+import { GithubIcon, InstagramIcon, LinkedinIcon } from "../ui/myIcons";
+import ProjectCard from "../ui/projectCard";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("HomePage");
   const highlightedProjects = allProjects.slice(0, 3);
   const yearsOfExperience = getYearsOfExperience();
 
@@ -39,9 +41,10 @@ export default function Home() {
             <br />
             <span className="text-xl">Full-stack developer!</span>
             <p className="text-base mb-6">
-              Over <strong>{yearsOfExperience} years of experience</strong> in
+              {t("heroDescription")}
+              {/* Over <strong>{yearsOfExperience} years of experience</strong> in
               the tech industry. I specialize in building web and mobile
-              applications using technologies such as React, Flutter and Django.
+              applications using technologies such as React, Flutter and Django. */}
             </p>
             <div className="flex justify-center gap-2 mb-8">
               {Object.entries(allTechnologies).map(([key, tech]) => (
