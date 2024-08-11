@@ -112,12 +112,8 @@ export default function Home() {
             alt="My profile image"
           />
 
-          <h1 className="text-xl mb-1 font-bold">
-            Enjoyed my work? Let&apos;s work together!
-          </h1>
-          <p className="text-base mb-2">
-            I&apos;m always up for a chat. Give me a shout on social media.
-          </p>
+          <h1 className="text-xl mb-1 font-bold">{t("contactTitle")}</h1>
+          <p className="text-base mb-2">{t("contactDescription")}</p>
 
           <div className="flex gap-2 justify-center">
             <SocialMediaIconButton href="https://github.com/Matheus-IT">
