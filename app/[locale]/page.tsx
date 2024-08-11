@@ -35,16 +35,15 @@ export default function Home() {
         <section className="hero-section flex items-center max-md:flex-col-reverse lg:my-[7rem]">
           <div className="hero-main-text grow-[3] basis-0 p-8 max-sm:p-4 max-sm:m-2 max-xl:m-4">
             <em className="text-2xl">
-              Hello! I&apos;m{" "}
+              {t("heroTitle")}
               <span className="text-sky-700">Matheus Costa!</span>
             </em>
             <br />
-            <span className="text-xl">Full-stack developer!</span>
+            <span className="text-xl">{t("heroMyRole")}</span>
             <p className="text-base mb-6">
-              {t("heroDescription")}
-              {/* Over <strong>{yearsOfExperience} years of experience</strong> in
-              the tech industry. I specialize in building web and mobile
-              applications using technologies such as React, Flutter and Django. */}
+              {t("heroDescription", {
+                yearsOfExperience: yearsOfExperience,
+              })}
             </p>
             <div className="flex justify-center gap-2 mb-8">
               {Object.entries(allTechnologies).map(([key, tech]) => (
@@ -61,7 +60,9 @@ export default function Home() {
 
             <div className="flex justify-center">
               <Link href="my-cv.pdf" target="_blank">
-                <Button className="bg-black text-white">My resume</Button>
+                <Button className="bg-black text-white">
+                  {t("heroResume")}
+                </Button>
               </Link>
             </div>
           </div>
