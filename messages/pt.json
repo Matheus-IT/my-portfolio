@@ -1,4 +1,10 @@
 {
+  "NavBar": {
+    "about": "Sobre",
+    "mainProjects": "Principais Projetos",
+    "allProjects": "Todos Projetos",
+    "contact": "Contato"
+  },
   "HomePage": {
     "heroTitle": "Olá! Eu sou ",
     "heroMyRole": "Desenvolvedor Full-stack!",

@@ -8,16 +8,18 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
+  const t = useTranslations("NavBar");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const links = [
-    { name: "About", href: "/" },
-    { name: "Main Projects", href: "#highlighted-project-section" },
-    { name: "All Projects", href: "/projects/" },
-    { name: "Contact", href: "#contact-section" },
+    { name: t("about"), href: "/" },
+    { name: t("mainProjects"), href: "#highlighted-project-section" },
+    { name: t("allProjects"), href: "/projects/" },
+    { name: t("contact"), href: "#contact-section" },
   ];
 
   return (
