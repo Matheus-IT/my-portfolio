@@ -8,8 +8,10 @@ import {
 } from "@nextui-org/react";
 import { Project, allTechnologies } from "../data";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function ProjectCard({ project }: { project: Project }) {
+  const t = useTranslations("ProjectCard");
   return (
     <Card className="p-2">
       <CardHeader className="flex-col items-start pb-0">
@@ -43,7 +45,7 @@ export default function ProjectCard({ project }: { project: Project }) {
 
       <CardFooter>
         <Link className="ml-auto" href={`/projects/${project.id}`}>
-          <Button className="bg-black text-white">See details</Button>
+          <Button className="bg-black text-white">{t("seeDetails")}</Button>
         </Link>
       </CardFooter>
     </Card>

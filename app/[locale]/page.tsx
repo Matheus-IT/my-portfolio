@@ -82,7 +82,7 @@ export default function Home() {
           className="highlighted-project-section flex flex-col justify-center items-center p-4 max-sm:m-2 max-xl:m-4"
         >
           <h1 className="text-xl mb-8 font-bold">
-            Take a look at my highlighted projects
+            {t("highlightedProjectsSectionTitle")}
           </h1>
 
           <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4 mb-8">
@@ -94,7 +94,7 @@ export default function Home() {
           <div className="flex justify-center">
             <Link href="/projects">
               <Button className="bg-black text-white">
-                See all
+                {t("seeAll")}
                 <ArrowRight />
               </Button>
             </Link>
