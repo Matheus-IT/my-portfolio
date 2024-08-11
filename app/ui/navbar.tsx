@@ -1,5 +1,6 @@
 "use client";
 
+import useTranslationsClient from "@/locales/clientHook";
 import {
   Navbar as NextUiNavbar,
   NavbarContent,
@@ -8,12 +9,11 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
-import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function Navbar() {
-  const t = useTranslations("NavBar");
+  const t = useTranslationsClient("NavBar");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const links = [
     { name: t("about"), href: "/" },

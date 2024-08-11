@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NextUIProvider } from "@nextui-org/react";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
-import "../globals.css";
+import "./globals.css";
+import { I18nProviderClient } from "@/locales/client";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,18 +15,16 @@ export default async function RootLayout({
   children,
   params: { locale },
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactElement;
   params: { locale: string };
 }>) {
-  const messages = await getMessages();
-
   return (
     <html lang={locale}>
       <body className={`${inter.className} antialiased`}>
         {
-          <NextIntlClientProvider messages={messages}>
+          <I18nProviderClient locale={locale}>
             <NextUIProvider>{children}</NextUIProvider>
-          </NextIntlClientProvider>
+          </I18nProviderClient>
         }
       </body>
     </html>

@@ -8,10 +8,10 @@ import {
 } from "@nextui-org/react";
 import { Project, allTechnologies } from "../data";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import useTranslationsServer from "@/locales/serverHook";
 
-export default function ProjectCard({ project }: { project: Project }) {
-  const t = useTranslations("ProjectCard");
+export default async function ProjectCard({ project }: { project: Project }) {
+  const t = await useTranslationsServer("ProjectCard");
   return (
     <Card className="p-2">
       <CardHeader className="flex-col items-start pb-0">
@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             {Object.entries(project.technologies).map(([key, tech]) => (
               <Image
                 key={key}
-                src={allTechnologies[tech].src}
+                src={"/" + allTechnologies[tech].src}
                 width={20}
                 alt="Technology used"
                 title={allTechnologies[tech].name}

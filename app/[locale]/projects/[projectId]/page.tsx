@@ -37,7 +37,7 @@ export default function Project({ params }: { params: { projectId: number } }) {
                   {project.technologies.map((tech, i) => (
                     <NextUiImage
                       key={i}
-                      src={"../" + allTechnologies[tech].src}
+                      src={"/" + allTechnologies[tech].src}
                       width={20}
                       alt="Technology used"
                       title={allTechnologies[tech].name}

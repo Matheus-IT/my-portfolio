@@ -15,10 +15,10 @@ import Footer from "../ui/footer";
 import SocialMediaIconButton from "../ui/socialMediaIconButton";
 import { GithubIcon, InstagramIcon, LinkedinIcon } from "../ui/myIcons";
 import ProjectCard from "../ui/projectCard";
-import { useTranslations } from "next-intl";
+import useTranslationsServer from "@/locales/serverHook";
 
-export default function Home() {
-  const t = useTranslations("HomePage");
+export default async function Home() {
+  const t = await useTranslationsServer("HomePage");
   const highlightedProjects = allProjects.slice(0, 3);
   const yearsOfExperience = getYearsOfExperience();
 

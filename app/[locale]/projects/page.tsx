@@ -8,9 +8,9 @@ import {
 } from "@nextui-org/react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { allProjects, allTechnologies } from "../data";
-import Footer from "../ui/footer";
-import ProjectCard from "../ui/projectCard";
+import { allProjects, allTechnologies } from "../../data";
+import Footer from "../../ui/footer";
+import ProjectCard from "../../ui/projectCard";
 
 export default function Projects() {
   return (
