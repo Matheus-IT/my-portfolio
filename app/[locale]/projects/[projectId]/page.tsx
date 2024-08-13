@@ -1,5 +1,6 @@
 import { allProjects, allTechnologies } from "@/app/data";
 import Footer from "@/app/ui/footer";
+import useTranslationsServer from "@/locales/serverHook";
 import { Button, Image as NextUiImage } from "@nextui-org/react";
 
 import {
@@ -10,7 +11,12 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-export default function Project({ params }: { params: { projectId: number } }) {
+export default async function Project({
+  params,
+}: {
+  params: { projectId: number };
+}) {
+  const t = await useTranslationsServer("Projects");
   const projectId = params.projectId;
   const project = allProjects.find((p) => p.id == projectId)!;
 
@@ -18,7 +24,7 @@ export default function Project({ params }: { params: { projectId: number } }) {
     <>
       <main className=" max-w-[1024px] mx-auto pt-8">
         <div className="flex gap-4 items-start mb-16 max-md:flex-col max-sm:m-2 max-xl:m-4">
-          <div className="project-section relative rounded-lg">
+          <div className="project-section relative rounded-lg grow">
             <Link className="absolute left-2 top-2 z-20" href="/projects/">
               <Button className="bg-black text-white border border-white border-solid">
                 <ArrowLeft />
@@ -50,7 +56,7 @@ export default function Project({ params }: { params: { projectId: number } }) {
 
               <p
                 dangerouslySetInnerHTML={{
-                  __html: project.detailedDescription,
+                  __html: t(`p${projectId}detailedDescription`),
                 }}
               ></p>
             </div>
