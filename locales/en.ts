@@ -21,6 +21,8 @@ export default {
     seeDetails: "See details",
   },
   Projects: {
+    p1description:
+      "A barbershop website where the user can book an appointment and see a real time queue",
     p1detailedDescription: `
       <p class="text-base mt-2">Main Functionalities:</p>
 

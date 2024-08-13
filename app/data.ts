@@ -38,7 +38,7 @@ export const allProjects: Project[] = [
     liveDemoLink: "",
     repositoryLink: `https://github.com/${githubUsername}/capstone`,
     description:
-      "A barbershop website where the user can book an appointment and see a real time queue",
+      ,
     date: "Oct 2021",
     technologies: [1, 2, 3],
   },
