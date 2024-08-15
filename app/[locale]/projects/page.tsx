@@ -11,8 +11,10 @@ import Link from "next/link";
 import { allProjects, allTechnologies } from "../../data";
 import Footer from "../../ui/footer";
 import ProjectCard from "../../ui/projectCard";
+import useTranslationsServer from "@/locales/serverHook";
 
-export default function Projects() {
+export default async function Projects() {
+  const t = await useTranslationsServer("Projects");
   return (
     <main className="max-w-[1024px] mx-auto pt-8">
       <Link href="/" className="max-sm:m-2 max-xl:m-4">
@@ -22,7 +24,7 @@ export default function Projects() {
       </Link>
 
       <h1 className="text-xl text-center mb-8 max-sm:m-2 max-sm:my-4 max-xl:m-4 font-bold">
-        These are all my projects
+        {t('allProjects')}
       </h1>
 
       <div className="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 gap-4 mb-16 max-sm:m-2 max-xl:m-4">

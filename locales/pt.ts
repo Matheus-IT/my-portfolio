@@ -19,6 +19,8 @@ export default {
       "Estou sempre pronto para bater um papo. Me mande uma mensagem nas redes sociais.",
   },
   Projects: {
+    takeALook: "Dê uma olhada neste projeto",
+    allProjects: "Esses são todos os meus projetos",
     seeAll: "Ver todos",
     seeDetails: "Ver detalhes",
     p1description: "Um site de barbearia onde o usuário pode marcar um horário e ver a fila em tempo real",

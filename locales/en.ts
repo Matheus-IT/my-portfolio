@@ -18,6 +18,8 @@ export default {
       "I'm always up for a chat. Give me a shout on social media.",
   },
   Projects: {
+    takeALook: "Take a look at this project",
+    allProjects: "These are all my projects",
     seeAll: "See all",
     seeDetails: "See details",
     p1description:
