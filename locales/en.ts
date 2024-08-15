@@ -17,10 +17,9 @@ export default {
     contactDescription:
       "I'm always up for a chat. Give me a shout on social media.",
   },
-  ProjectCard: {
-    seeDetails: "See details",
-  },
   Projects: {
+    seeAll: "See all",
+    seeDetails: "See details",
     p1description:
       "A barbershop website where the user can book an appointment and see a real time queue",
     p1detailedDescription: `
@@ -40,6 +39,7 @@ export default {
         A good user experience in a barbershop/hair salon goes beyond just having a nice website. From personal experience, a significant amount of time is often spent waiting for a haircut. To address this, a <strong>real-time queue system</strong> was developed, which clients can access and is managed by the hairstylist. This system allows busy individuals to check the current wait time and choose the most convenient time to visit the salon.
       </p>
     `,
+    p2description: 'A mobile application to remind birthdays via push notifications and email',
     p2detailedDescription: `
       <p class="text-base mt-2">Main Functionalities:</p>
 
@@ -61,6 +61,7 @@ export default {
         The solution comprises a mobile app built with <em>Flutter</em> and an API designed with <em>Django REST framework</em>.
       </p>
     `,
+    p3description: 'A casual game, multiplatform, built with the flutter flame engine',
     p3detailedDescription: `
       <p class="text-base mt-2">Main Rules:</p>
 
@@ -79,6 +80,7 @@ export default {
         The experience of building this game was awesome, on top of that I learned a lot with my friends when we gathered to discuss about the features, implementation details and suggestions.
       </p>
     `,
+    p4description: "The portfolio website you're accessing that showcases my hard work",
     p4detailedDescription: `
       <p class="text-base mt-2">Main Functionalities:</p>
 
@@ -96,6 +98,7 @@ export default {
         For technologies, I used <em>Next.js</em> with <em>TypeScript</em> and <em>Tailwind CSS</em>.
       </p>
     `,
+    p5description: 'A battleship game built with JavaScript to improve my logic and problem solving process',
     p5detailedDescription: `
       <p class="text-base mt-2">Main Functionalities:</p>
 

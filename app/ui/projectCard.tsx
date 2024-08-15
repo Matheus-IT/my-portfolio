@@ -11,7 +11,7 @@ import Link from "next/link";
 import useTranslationsServer from "@/locales/serverHook";
 
 export default async function ProjectCard({ project }: { project: Project }) {
-  const t = await useTranslationsServer("ProjectCard");
+  const t = await useTranslationsServer("Projects");
   return (
     <Card className="p-2">
       <CardHeader className="flex-col items-start pb-0">
@@ -31,7 +31,7 @@ export default async function ProjectCard({ project }: { project: Project }) {
             ))}
           </div>
         </div>
-        <p className="text-sm">{project.description}</p>
+        <p className="text-sm">{t(`p${project.id}description`)}</p>
       </CardHeader>
 
       <CardBody className="overflow-visible">
