@@ -36,7 +36,7 @@ export const allProjects: Project[] = [
     imgSrc: "images/projects/barbershop1.png",
     liveDemoLink: "",
     repositoryLink: `https://github.com/${githubUsername}/capstone`,
-    date: "Oct 2021",
+    date: "10/2021", // Outubro 2021
     technologies: [1, 2, 3],
   },
   {
@@ -45,7 +45,7 @@ export const allProjects: Project[] = [
     imgSrc: "images/projects/birthday-reminder1.png",
     liveDemoLink: "",
     repositoryLink: `https://github.com/${githubUsername}/birthday_app`,
-    date: "May 2024",
+    date: "05/2024", // Maio 2024
     technologies: [1, 2, 8, 9],
   },
   {
@@ -54,7 +54,7 @@ export const allProjects: Project[] = [
     imgSrc: "images/projects/bounce-breaker1.jpeg",
     liveDemoLink: "https://tvlas.github.io/bounce-breaker-mania",
     repositoryLink: `https://github.com/tvlas/bounce-breaker-mania`,
-    date: "May 2024",
+    date: "05/2024", // Maio 2024
     technologies: [8, 9],
   },
   {
@@ -63,7 +63,7 @@ export const allProjects: Project[] = [
     imgSrc: "images/projects/portfolio1.png",
     liveDemoLink: "",
     repositoryLink: `https://github.com/${githubUsername}/my-portfolio`,
-    date: "Jul 2024",
+    date: "07/2024", // Julho 2024
     technologies: [4, 5, 6],
   },
   {
@@ -72,7 +72,7 @@ export const allProjects: Project[] = [
     imgSrc: "images/projects/battleship1.png",
     liveDemoLink: "https://matheus-it.github.io/battleship-game/",
     repositoryLink: `https://github.com/${githubUsername}/battleship-game`,
-    date: "Jul 2020",
+    date: "07/2020", // Julho 2020
     technologies: [3],
   },
 ];
