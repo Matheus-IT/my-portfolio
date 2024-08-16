@@ -11,6 +11,7 @@ import {
 } from "@nextui-org/react";
 import Link from "next/link";
 import { useState } from "react";
+import ChangeLocaleButton from "./changeLocaleButton";
 
 export default function Navbar() {
   const t = useTranslationsClient("NavBar");
@@ -37,6 +38,9 @@ export default function Navbar() {
             </NavbarItem>
           );
         })}
+
+        <ChangeLocaleButton />
+
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden ml-auto"

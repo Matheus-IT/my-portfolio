@@ -1,4 +1,8 @@
 export default {
+  ChangeLocaleButton: {
+    english: "Inglês",
+    portuguese: "Português",
+  },
   NavBar: {
     about: "Sobre",
     mainProjects: "Principais Projetos",
@@ -23,7 +27,8 @@ export default {
     allProjects: "Esses são todos os meus projetos",
     seeAll: "Ver todos",
     seeDetails: "Ver detalhes",
-    p1description: "Um site de barbearia onde o usuário pode marcar um horário e ver a fila em tempo real",
+    p1description:
+      "Um site de barbearia onde o usuário pode marcar um horário e ver a fila em tempo real",
     p1detailedDescription: `
       <p class="text-base mt-2">Principais Funcionalidades:</p>
 
@@ -41,7 +46,8 @@ export default {
         Uma boa experiência do usuário em uma barbearia/salão de cabeleireiro vai além de apenas ter um site bonito. Com base em experiências pessoais, um tempo significativo é frequentemente gasto esperando para cortar o cabelo. Para resolver isso, foi desenvolvido um <strong>sistema de fila em tempo real</strong>, que os clientes podem acessar e que é gerido pelo cabeleireiro. Este sistema permite que pessoas ocupadas verifiquem o tempo de espera atual e escolham o momento mais conveniente para visitar o salão.
       </p>
     `,
-    p2description: "Um aplicativo móvel para lembrar aniversários via notificações push e email",
+    p2description:
+      "Um aplicativo móvel para lembrar aniversários via notificações push e email",
     p2detailedDescription: `
       <p class="text-base mt-2">Principais Funcionalidades:</p>
 
@@ -63,7 +69,8 @@ export default {
         A solução é composta por um aplicativo móvel construído com <em>Flutter</em> e uma API projetada com <em>Django REST framework</em>.
       </p>
     `,
-    p3description: "Um jogo casual, multiplataforma, construído com a engine Flutter Flame",
+    p3description:
+      "Um jogo casual, multiplataforma, construído com a engine Flutter Flame",
     p3detailedDescription: `
       <p class="text-base mt-2">Principais Regras:</p>
 
@@ -82,7 +89,8 @@ export default {
         A experiência de construir este jogo foi incrível, além disso, aprendi muito com meus amigos quando nos reuníamos para discutir sobre as funcionalidades, detalhes de implementação e sugestões.
       </p>
     `,
-    p4description: "O portfólio que você está acessando, que exibe meu trabalho árduo",
+    p4description:
+      "O portfólio que você está acessando, que exibe meu trabalho árduo",
     p4detailedDescription: `
       <p class="text-base mt-2">Principais Funcionalidades:</p>
 
@@ -100,7 +108,8 @@ export default {
         Para as tecnologias, utilizei <em>Next.js</em> com <em>TypeScript</em> e <em>Tailwind CSS</em>.
       </p>
     `,
-    p5description: "Um jogo de batalha naval construído com JavaScript para melhorar minha lógica e processo de resolução de problemas",
+    p5description:
+      "Um jogo de batalha naval construído com JavaScript para melhorar minha lógica e processo de resolução de problemas",
     p5detailedDescription: `
       <p class="text-base mt-2">Principais Funcionalidades:</p>
 
