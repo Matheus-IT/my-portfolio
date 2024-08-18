@@ -25,6 +25,7 @@ export default async function ProjectCard({ project }: { project: Project }) {
                 key={key}
                 src={"/" + allTechnologies[tech].src}
                 width={20}
+                height={20}
                 alt="Technology used"
                 title={allTechnologies[tech].name}
               />
