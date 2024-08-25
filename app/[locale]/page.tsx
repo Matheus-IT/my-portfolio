@@ -16,8 +16,10 @@ import SocialMediaIconButton from "../ui/socialMediaIconButton";
 import { GithubIcon, InstagramIcon, LinkedinIcon } from "../ui/myIcons";
 import ProjectCard from "../ui/projectCard";
 import useTranslationsServer from "@/locales/serverHook";
+import { getCurrentLocale } from "@/locales/server";
 
 export default async function Home() {
+  const locale = getCurrentLocale();
   const t = await useTranslationsServer("HomePage");
   const highlightedProjects = allProjects.slice(0, 3);
   const yearsOfExperience = getYearsOfExperience();
@@ -59,7 +61,7 @@ export default async function Home() {
             </div>
 
             <div className="flex justify-center">
-              <Link href="my-cv.pdf" target="_blank">
+              <Link href={`my-cv-${locale}.pdf`} target="_blank">
                 <Button className="bg-black text-white">
                   {t("heroResume")}
                 </Button>
