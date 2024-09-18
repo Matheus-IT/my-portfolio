@@ -63,9 +63,7 @@ export default async function Project({
           </div>
 
           <div className="see-more-section flex flex-col gap-2 p-4 rounded-lg max-md:w-full lg:min-w-[fit-content] max-md:text-center">
-            <span className="text-lg mb-1 font-bold">
-              {t('takeALook')}
-            </span>
+            <span className="text-lg mb-1 font-bold">{t("takeALook")}</span>
 
             <div className="flex flex-col justify-center items-center gap-2 max-md:flex-row">
               {project.liveDemoLink == "" ? (
