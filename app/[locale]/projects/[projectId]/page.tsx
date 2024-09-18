@@ -54,11 +54,11 @@ export default async function Project({
 
               <h1 className="text-2xl">{project.name}</h1>
 
-              <p
+              <div
                 dangerouslySetInnerHTML={{
                   __html: t(`p${projectId}detailedDescription`),
                 }}
-              ></p>
+              ></div>
             </div>
           </div>
 
