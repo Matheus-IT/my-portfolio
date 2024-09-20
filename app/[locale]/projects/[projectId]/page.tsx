@@ -55,6 +55,7 @@ export default async function Project({
               <h1 className="text-2xl">{project.name}</h1>
 
               <div
+                className="list-disc list-inside"
                 dangerouslySetInnerHTML={{
                   __html: t(`p${projectId}detailedDescription`),
                 }}
