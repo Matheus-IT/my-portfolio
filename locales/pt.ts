@@ -127,5 +127,23 @@ export default {
         Para as tecnologias, utilizei <em>JavaScript</em>, <em>HTML</em> e <em>CSS</em>.
       </p>
     `,
+    p6description: "Uma rede social essencial e funcional",
+    p6detailedDescription: `
+      <p class="text-base mt-2">Principais Funcionalidades:</p>
+
+      <ul class="list-disc list-inside">
+        <li>Fazer publicações</li>
+        <li>Seguir outros usuários</li>
+        <li>Curtir publicações de outros usuários</li>
+      </ul>
+
+      <p class="text-base text-justify mt-2">
+        Eu construí este projeto por curiosidade para aprender a estruturar um site básico de rede social.
+      </p>
+
+      <p class="text-base text-justify mt-2">
+        Para as tecnologias, utilizei <em>Python</em>, <em>Django</em>, <em>JavaScript</em>, <em>HTML</em> e <em>CSS</em>.
+      </p>
+    `,
   },
 } as const;

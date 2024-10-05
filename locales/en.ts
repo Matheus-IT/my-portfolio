@@ -126,5 +126,23 @@ export default {
         For technologies, I used <em>JavaScript</em>, <em>HTML</em> and <em>CSS</em>.
       </p>
     `,
+    p6description: "An essencial social media fully functional",
+    p6detailedDescription: `
+      <p class="text-base mt-2">Main Functionalities:</p>
+
+      <ul class="list-disc list-inside">
+        <li>Make posts</li>
+        <li>Follow other users</li>
+        <li>Like posts of other users</li>
+      </ul>
+
+      <p class="text-base text-justify mt-2">
+        I build this project curious to know how to structure a basic social media website
+      </p>
+
+      <p class="text-base text-justify mt-2">
+        For technologies, I used <em>Python</em>, <em>Django</em>, <em>JavaScript</em>, <em>HTML</em> and <em>CSS</em>.
+      </p>
+    `,
   },
 } as const;

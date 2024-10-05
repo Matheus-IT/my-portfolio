@@ -75,4 +75,13 @@ export const allProjects: Project[] = [
     date: "07/2020", // Julho 2020
     technologies: [3],
   },
+  {
+    id: 6,
+    name: "Social Media",
+    imgSrc: "images/projects/social-media1.png",
+    liveDemoLink: "",
+    repositoryLink: `https://github.com/${githubUsername}/network`,
+    date: "10/2020", // Outubro 2020
+    technologies: [1, 2, 3],
+  },
 ];
