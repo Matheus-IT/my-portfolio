@@ -4,24 +4,39 @@ import useTranslationsClient from "@/locales/clientHook";
 import {
   Navbar as NextUiNavbar,
   NavbarContent,
-  NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Link from "next/link";
-import { useState } from "react";
+import { MouseEventHandler, SyntheticEvent, useState } from "react";
 import ChangeLocaleButton from "./changeLocaleButton";
+import NavItem from "./navItem";
 
 export default function Navbar() {
   const t = useTranslationsClient("NavBar");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const links = [
-    { name: t("about"), href: "/" },
-    { name: t("mainProjects"), href: "#highlighted-project-section" },
-    { name: t("allProjects"), href: "/projects/" },
-    { name: t("contact"), href: "#contact-section" },
-  ];
+  const [links, setLinks] = useState([
+    { id: 1, name: t("about"), href: "/", isActive: true },
+    {
+      id: 2,
+      name: t("mainProjects"),
+      href: "#highlighted-project-section",
+      isActive: false,
+    },
+    { id: 3, name: t("allProjects"), href: "/projects/", isActive: false },
+    { id: 4, name: t("contact"), href: "#contact-section", isActive: false },
+  ]);
+
+  function handleClickNav(activeLinkId: number) {
+    setLinks((prevLinks) =>
+      prevLinks.map((l) => {
+        if (l.id == activeLinkId) l.isActive = true;
+        else l.isActive = false;
+        return l;
+      })
+    );
+  }
 
   return (
     <NextUiNavbar className="backdrop-blur-md bg-black/90 text-white">
@@ -30,12 +45,14 @@ export default function Navbar() {
 
         {links.map((l) => {
           return (
-            <NavbarItem
-              key={l.name}
-              className="p-2 rounded hover:bg-neutral-800 transition-background duration-200 max-sm:hidden"
+            <NavItem
+              key={l.id}
+              id={l.id}
+              isActive={l.isActive}
+              onClick={handleClickNav}
             >
               <Link href={l.href}>{l.name}</Link>
-            </NavbarItem>
+            </NavItem>
           );
         })}
 
